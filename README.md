@@ -21,11 +21,11 @@
     - `USER_UID`: `1000`
     - `USER_NAME`: `dfx`
     - `USER_HOME`: `/home/dfx`
-- some optimalization for smaller image
+- some optimizations for smaller image
 
 ## Legacy support
 
-CentOS 5, 6 and 7 are end-of-life distributions. The default CI baseline builds and smoke-tests CentOS 7 only, using the archived CentOS vault repositories. CentOS 5 and 6 Dockerfiles are kept for historical compatibility and may require additional mirror handling when rebuilt.
+CentOS 5, 6 and 7 are end-of-life distributions. The default CI baseline builds and smoke-tests CentOS 7 only, using the archived CentOS vault repositories. CentOS 5 and 6 tags are legacy/unmaintained and are kept for historical compatibility only; rebuilding them may require additional mirror handling.
 
 ## CentOS 7
 
@@ -37,13 +37,13 @@ docker run -it --rm dockette/centos /bin/bash
 docker run -it --rm dockette/centos:7 /bin/bash
 ```
 
-## CentOS 6
+## CentOS 6 legacy/unmaintained
 
 ```
 docker run -it --rm dockette/centos:6 /bin/bash
 ```
 
-## CentOS 5
+## CentOS 5 legacy/unmaintained
 
 ```
 docker run -it --rm dockette/centos:5 /bin/bash
